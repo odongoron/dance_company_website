@@ -5,27 +5,27 @@ import { Calendar, Users, School, Star } from 'lucide-react';
 const OurStory = () => {
   const milestones = [
     {
-      year: "2014",
+      year: "2022",
       title: "The Beginning",
-      description: "Founded by Misheal Victor Okumu through Star Art Foundation",
+      description: "Founded by Three Artists",
       icon: Calendar
     },
     {
-      year: "2014-2016",
+      year: "2023",
       title: "Community Impact",
-      description: "Provided free training to 200+ children from Huruma and Mathare",
+      description: "Provided free training to 100+ young dancers",
       icon: Users
     },
     {
-      year: "2017",
+      year: "2024",
       title: "Official Registration",
-      description: "Formal establishment of Blingers Empire as a registered company",
+      description: "Formal establishment of Dance company",
       icon: Star
     },
     {
-      year: "2017+",
-      title: "School Partnerships",
-      description: "Started with Mirema School, expanding to multiple institutions",
+      year: "2025+",
+      title: "Partnership",
+      description: "Reaching Out For Expansion",
       icon: School
     }
   ];
@@ -35,7 +35,7 @@ const OurStory = () => {
       {/* Hero Section */}
       <div className="relative h-[600px] w-full -mt-[80px]">
         <Image
-          src="/covers/dance_performance.jpg"
+          src="/covers/ourstory.webp"
           alt="Dance Performance"
           className="object-cover"
           fill
@@ -49,7 +49,7 @@ const OurStory = () => {
                   Our Story
                 </h1>
                 <p className="text-xl text-[#c4a01c] font-medium">
-                  Transforming Lives Through Art Since 2014
+                  Transforming Lives Through Art 
                 </p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const OurStory = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-xl text-[#1a3264] leading-relaxed">
-              Blingers Empire began as more than just a dance company - it emerged as a beacon of hope
+              We began as more than just a dance company and emerged as a beacon of hope
               and transformation in the heart of Nairobi&apos;s communities.
             </p>
           </div>
@@ -98,15 +98,13 @@ const OurStory = () => {
               <div>
                 <h2 className="text-2xl font-bold text-[#1a3264] mb-4">The Foundation</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Under the visionary leadership of Misheal Victor Okumu, what began as the Star Art Foundation
-                  evolved into a powerful force for change. Over 200 children from Huruma and Mathare
-                  found their artistic voice through free training in dance, acrobatics, gymnastics,
-                  music, and drama.
+                  What began as a passion for Art evolved into a powerful force for change. Over 100 children from Nairobi
+                  found their artistic voice through free training in dance, acrobatics, gymnastics, music, and drama.
                 </p>
               </div>
               <div className="relative h-[300px]">
                 <Image
-                  src="/gallery/image12.jpg"
+                  src="/gallery/training2.jpg"
                   alt="Dance Training"
                   className="rounded-lg object-cover"
                   fill
@@ -117,7 +115,7 @@ const OurStory = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="order-2 md:order-1 relative h-[300px]">
                 <Image
-                  src="/gallery/image11.jpg"
+                  src="/gallery/perfomance.jpeg"
                   alt="Performance"
                   className="rounded-lg object-cover"
                   fill
@@ -126,8 +124,8 @@ const OurStory = () => {
               <div className="order-1 md:order-2">
                 <h2 className="text-2xl font-bold text-[#1a3264] mb-4">Beyond Dance</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Misheal&apos;s commitment extended beyond artistic training. By investing his own earnings
-                  into students&apos; education, he ensured that talent would not be limited by financial
+                  Our commitment extendeds beyond artistic training. By investing highly on
+                  students&apos; education, we ensured that talent would not be limited by financial
                   constraints. This dedication led to the emergence of exceptional performers who would
                   go on to captivate audiences both locally and internationally.
                 </p>
@@ -137,7 +135,7 @@ const OurStory = () => {
             <div className="text-center">
               <h2 className="text-2xl font-bold text-[#1a3264] mb-4">Today&apos;s Impact</h2>
               <p className="text-gray-700 leading-relaxed mb-8">
-                Today, Blingers Empire stands as a testament to the power of artistic education and
+                Today, Dance Company stands as a testament to the power of artistic education and
                 community investment. Our comprehensive performing arts certifications, public studio
                 access, and school programs continue to nurture talent and transform lives across Kenya.
               </p>
