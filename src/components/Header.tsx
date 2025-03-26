@@ -26,7 +26,7 @@ const Header = () => {
         { title: "Testimonials", href: "/about/testimonials" },
       ],
     },
-    {
+    /*{
       title: "Services",
       href: "#",
       hasSubmenu: true,
@@ -35,7 +35,7 @@ const Header = () => {
         { title: "Gymnastics", href: "/services/gymnastics" },
         { title: "Fitness", href: "/services/fitness" },
       ],
-    },
+    },*/
     {
       title: "News",
       href: "#",
@@ -45,6 +45,7 @@ const Header = () => {
         { title: "Blog", href: "/news/blog" },
       ],
     },
+    { title: "Services", href: "/services" }, //combined services page to replace dub-menu commemnted one
     { title: "Gallery", href: "/gallery" },
     { title: "Contact Us", href: "/contact" },
   ];
@@ -64,8 +65,8 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="block">
               <Image
-                src="/covers/blingers_logo.png"
-                alt="Blingers Empire Logo"
+                src="/covers/logo.webp"
+                alt="Dance Company Logo"
                 width={80}
                 height={15}
                 className="hover:opacity-80 transition-opacity duration-200"
@@ -174,7 +175,7 @@ const Header = () => {
 
         {/* Search Overlay */}
         {isMounted && isSearchOpen && (
-          <div className="absolute top-0 left-0 w-full bg-white p-4 shadow-lg">
+          <div className="absolute top-0 right-0 w-20% bg-white p-4 shadow-lg">
             <div className="container mx-auto">
               <div className="flex items-center">
                 <input
