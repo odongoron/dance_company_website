@@ -2,15 +2,15 @@
 
 import React, { useState } from "react";
 import { Mail, MapPin, CheckCircle } from "lucide-react";
-import { sendEmail } from "./actions"; // Import sendEmail function
+import { sendEmail } from "./actions"; 
 
-// Define the structure of form status
+// form status structure
 interface FormStatus {
   submitted: boolean;
   sending: boolean;
 }
 
-// Define the structure of form data
+// structure of form data
 interface FormData {
   name: string;
   email: string;
@@ -62,10 +62,10 @@ export default function ArtisticContactPage() {
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-[#1a3264] mb-4 flex items-center justify-center">
-            Contact Us
+            Reach Out
           </h1>
           <p className="text-xl text-gray-600">
-            Where Every Movement Tells a Story
+            And make every movement tell a story
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function ArtisticContactPage() {
                 Email Us
               </h3>
               <p className="text-center text-gray-600">
-                info@blingersempire.com
+                info@dancecompany.com
               </p>
             </div>
 
@@ -87,7 +87,7 @@ export default function ArtisticContactPage() {
                 Our Location
               </h3>
               <p className="text-center text-gray-600">
-                Buruburu 1, Nairobi, Kenya
+                Nairobi, Kenya
               </p>
             </div>
           </div>
