@@ -33,19 +33,19 @@ const CreativeGallery = () => {
       id: 1,
       title: "Elegant Performance",
       subtitle: "Where shadows dance",
-      image: "/gallery/image1.jpg"
+      image: "/gallery/elegantperformance.webp"
     },
     {
       id: 2,
       title: "Urban Rhythms",
       subtitle: "Street becomes stage",
-      image: "/gallery/image2.jpg"
+      image: "/gallery/urbanrhythm.jpg"
     },
     {
       id: 3,
       title: "Cultural Fusion",
       subtitle: "Movements without borders",
-      image: "/gallery/image3.jpg"
+      image: "/gallery/culturalfusion.jpg"
     }
   ];
 
@@ -54,41 +54,49 @@ const CreativeGallery = () => {
       id: 1,
       title: "Elegant Performance",
       category: "stage",
-      thumbnail: "/gallery/image4.jpg",
-      fullImage: "/gallery/image4.jpg",
+      thumbnail: "/gallery/img1.jpg",
+      fullImage: "/gallery/img1.jpg",
       description: "An ethereal dance that blends shadow and light"
     },
     {
       id: 2,
       title: "Urban Rhythms",
       category: "street",
-      thumbnail: "/gallery/image5.jpg",
-      fullImage: "/gallery/image5.jpg",
+      thumbnail: "/gallery/img2.webp",
+      fullImage: "/gallery/img2.webp",
       description: "Breaking boundaries in the heart of the city"
     },
     {
       id: 3,
       title: "Cultural Fusion",
       category: "street",
-      thumbnail: "/gallery/image6.jpg",
-      fullImage: "/gallery/image6.jpg",
+      thumbnail: "/gallery/img3.webp",
+      fullImage: "/gallery/img3.webp",
       description: "Celebrating diversity through movement"
     },
     {
       id: 4,
       title: "Sunset Silhouette",
       category: "stage",
-      thumbnail: "/gallery/image7.jpg",
-      fullImage: "/gallery/image7.jpg",
+      thumbnail: "/gallery/img4.jpg",
+      fullImage: "/gallery/img4.jpg",
       description: "Capturing dance against the golden hour"
     },
     {
       id: 5,
       title: "Contemporary Edge",
       category: "cultural",
-      thumbnail: "/gallery/image9.jpg",
-      fullImage: "/gallery/image9.jpg",
+      thumbnail: "/gallery/img5.webp",
+      fullImage: "/gallery/img5.webp",
       description: "Modern movements challenging perception"
+    },
+    {
+      id: 6,
+      title: "Harmonic Motion",
+      category: "cultural",
+      thumbnail: "/gallery/img6.webp",
+      fullImage: "/gallery/img6.webp",
+      description: "Fluid transitions between forms"
     }
   ];
 
@@ -109,7 +117,7 @@ const CreativeGallery = () => {
     }, 5000);
 
     return () => clearInterval(slideInterval);
-  }, [carouselImages.length]);  // Added carouselImages.length to the dependency array
+  }, [carouselImages.length]);
 
   const handlePrevSlide = () => {
     setCurrentSlide((prev) => 
@@ -138,8 +146,10 @@ const CreativeGallery = () => {
             <Image 
               src={slide.image} 
               alt={slide.title}
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
+              priority={index === 0}
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center">
               <div>
@@ -212,9 +222,10 @@ const CreativeGallery = () => {
             >
               <Image 
                 src={img.thumbnail} 
-                alt={img.title} 
-                layout="fill"
-                objectFit="cover"
+                alt={img.title}
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="transform group-hover:scale-110 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
@@ -238,12 +249,13 @@ const CreativeGallery = () => {
               <Minimize2 />
             </button>
             <div className="grid md:grid-cols-2">
-              <div>
+              <div className="relative aspect-square">
                 <Image 
                   src={selectedImage.fullImage} 
-                  alt={selectedImage.title} 
-                  layout="fill"
-                  objectFit="cover"
+                  alt={selectedImage.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="p-8 flex flex-col justify-center">
