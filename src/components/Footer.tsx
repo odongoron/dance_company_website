@@ -23,7 +23,7 @@ const Footer = () => {
                 href="/"
                 className="text-2xl font-bold text-[#c4a01c] hover:text-white"
               >
-                Blingers Empire
+                Dance Company
               </Link>
             </div>
 
@@ -34,42 +34,42 @@ const Footer = () => {
                 <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   <li>
                     <Link
-                      href="/about"
+                      href="/about/story"
                       className="text-white hover:text-[#c4a01c] text-sm transition-colors duration-200"
                     >
-                      About us
+                      Our Story
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/services"
+                      href="/news/events"
                       className="text-white hover:text-[#c4a01c] text-sm transition-colors duration-200"
                     >
-                      Services
+                      Events
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/contact"
+                      href="/about/testimonials"
                       className="text-white hover:text-[#c4a01c] text-sm transition-colors duration-200"
                     >
-                      Contact Us
+                      Testimonials
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/clients"
+                      href="/about/team"
                       className="text-white hover:text-[#c4a01c] text-sm transition-colors duration-200"
                     >
-                      Clients
+                      The Team
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/news"
+                      href="/news/blog"
                       className="text-white hover:text-[#c4a01c] text-sm transition-colors duration-200"
                     >
-                      News
+                      Blog
                     </Link>
                   </li>
                   <li>
@@ -88,18 +88,18 @@ const Footer = () => {
                 <div className="space-y-4">
                   <div className="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0">
                     <a
-                      href="tel:+254718206992"
+                      href="tel:+254721499142"
                       className="flex items-center text-white hover:text-[#c4a01c] text-sm"
                     >
                       <Phone className="w-4 h-4 mr-2" />
-                      <span>+254 71 820 69 92</span>
+                      <span>+254 72 149 91 42</span>
                     </a>
                     <a
-                      href="mailto:info@blingersempire.com"
+                      href="mailto:info@dancecompany.com"
                       className="flex items-center text-white hover:text-[#c4a01c] text-sm"
                     >
                       <Mail className="w-4 h-4 mr-2" />
-                      <span>info@blingersempire.com</span>
+                      <span>info@dancecompany.com</span>
                     </a>
                   </div>
                 </div>
@@ -107,7 +107,8 @@ const Footer = () => {
                 {/* Social Media Icons on the Left Side */}
                 <div className="flex space-x-10 mt-5">
                   <a
-                    href="https://www.instagram.com/blingersempire"
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Visit our Instagram"
@@ -116,7 +117,8 @@ const Footer = () => {
                     <FaInstagram className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://www.facebook.com/BlingersEmpire"
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Visit our Facebook"
@@ -125,7 +127,8 @@ const Footer = () => {
                     <FaFacebookF className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://www.tiktok.com/@blingers_empire"
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Visit our TikTok"
@@ -134,7 +137,8 @@ const Footer = () => {
                     <FaTiktok className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://x.com/BlingersEmpire"
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Visit our X (formerly Twitter)"
@@ -143,7 +147,8 @@ const Footer = () => {
                     <FaTwitter className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://www.youtube.com/@blingersempire"
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Visit our YouTube"
@@ -161,14 +166,16 @@ const Footer = () => {
         <div className="border-t border-[#c4a01c]/30 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center px-4">
           <Link
             href="/privacy-policy"
+            onClick={(e) => e.preventDefault()}
             className="text-white hover:text-[#c4a01c] text-sm mb-4 md:mb-0 transition-colors duration-200"
           >
             Privacy Policy
           </Link>
           <div className="flex space-x-4">
             <a
-              href="https://www.linkedin.com"
-              target="_blank"
+              href="#"
+              onClick={(e) => e.preventDefault()}
+              target="blank"
               rel="nofollow noopener noreferrer"
               aria-label="Visit our LinkedIn profile"
               className="text-white hover:text-[#c4a01c] transition-colors duration-200"
@@ -180,7 +187,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center mt-8 text-sm text-[#c4a01c]">
-          © {new Date().getFullYear()} Blingers Empire. All rights reserved.
+          © {new Date().getFullYear()} Dance Company. All rights reserved.
         </div>
       </footer>
     </>
