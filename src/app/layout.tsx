@@ -5,8 +5,8 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blingers Empire",
-  description: "Welcome to Blingers Empire - Dance Company",
+  title: "Dance Company",
+  description: "Welcome to the Dance Company",
   icons: [{ rel: "icon", url: "/covers/favicon.ico" }],
 };
 
