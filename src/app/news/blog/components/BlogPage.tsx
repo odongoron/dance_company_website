@@ -19,8 +19,8 @@ const initialPosts: BlogPost[] = [
   {
     id: 1,
     title: "Why Dance is Good for Your Mind and Body",
-    author: "Ronny",
-    date: "January 24, 2025",
+    author: "Ron",
+    date: "March 18, 2025",
     excerpt: "Discover how dancing transforms your physical and mental well-being",
     fullContent: `Dance is more than just a series of movements set to music – it's a celebration of life, a powerful tool for self-expression, and an incredible workout for both your mind and body. Whether you're a seasoned dancer or someone who only busts out moves at weddings, the benefits of dancing go far beyond the dance floor. Here are just a few reasons why dance is one of the best activities you can incorporate into your life:
 
@@ -58,7 +58,7 @@ So, what are you waiting for? Put on your dancing shoes and let's move together!
     id: 2,
     title: "The Role of Music in Dance",
     author: "Ronny", 
-    date: "January 10, 2025",
+    date: "March 12, 2025",
     excerpt: "How to Choose the Perfect Soundtrack for your dance routines",
     fullContent: `When it comes to dance, music isn’t just a backdrop – it’s the heartbeat of every movement, the spark that ignites creativity, and the thread that ties emotion to performance. Choosing the right music for your routines and performances can transform your choreography into a captivating story. Here’s a deep dive into the role of music in dance and how to pick the perfect soundtrack for your performances;
 
@@ -120,7 +120,7 @@ We Blingers Empire, embrace the transformative power of music and movement. Whet
     id: 3,
     title: "The Magic of Dance ",
     author: "Juvera", 
-    date: "January 25, 2025",
+    date: "March 25, 2025",
     excerpt: "Where Movement Meets Passion",
     fullContent: `Dance is more than just a sequence of moves; it's a conversation without words, a way to express emotion, and an art form that connects us all. Whether you're a seasoned dancer or someone who's just started, the world of dance has something exciting and fulfilling for everyone. Let’s take a step into the rhythm of life and explore the magic behind the moves!
 
@@ -159,8 +159,8 @@ If you’re ready to start your dance journey or simply want to learn more, come
   /*{
     id: 3,
     title: "The Role of Music in Dance",
-    author: "Ronny", 
-    date: "January 10, 2025",
+    author: "Ron", 
+    date: "march 10, 2025",
     excerpt: "How to Choose the Perfect Soundtrack for your dance routines",
     fullContent: ` `
     readTime: 5,
@@ -248,7 +248,7 @@ const BlogPage: React.FC = () => {
           text-transparent bg-clip-text 
           bg-gradient-to-r from-white to-yellow-200"
         >
-          Blingers Blog
+          Our Blog
         </h1>
         <p className="text-xl text-white/80 max-w-2xl mx-auto">
           Transformative power of dance through inspiring stories
