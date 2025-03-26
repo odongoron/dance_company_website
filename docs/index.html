@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanceCompany</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-bg h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Header -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-purple-600">DanceCompany</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-purple-600 transition-colors">Features</a>
+                    <a href="#about" class="text-gray-600 hover:text-purple-600 transition-colors">Our Story</a>
+                    <a href="https://d-co.vercel.app/" 
+                       class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors">
+                        Live Demo →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg bg-cover bg-center h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center text-white">
+            <h1 class="text-5xl font-bold mb-6 animate-fade">Reimagining  Dance</h1>
+            <p class="text-xl mb-8 animate-fade" style="animation-delay: 0.2s;">Professional dance services, gallery, and resources in one place</p>
+            
+            <a href="https://d-co.vercel.app/" 
+            class="bg-purple-600 text-white px-8 py-4 rounded-full hover:bg-purple-700 transition-colors">
+             See App Demo
+         </a>
+        </div>
+    </section>
+
+     <!-- Feature Section  -->
+     <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Feature -->
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card">
+                    <img src="assets/services-feature.png" alt="Dance services" class="rounded-lg mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Dance Services</h3>
+                    <p class="text-gray-600">Comprehensive training programs in contemporary, ballet, and cultural dance styles with certified instructors.</p>
+                </div>
+
+                <!-- Gallery Feature -->
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card">
+                    <img src="assets/gallery-feature.png" alt="Performance gallery" class="rounded-lg mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Performance Gallery</h3>
+                    <p class="text-gray-600">Showcasing our award-winning performances and behind-the-scenes moments from our dancers.</p>
+                </div>
+
+                <!-- Blog Feature -->
+                <div class="bg-white p-6 rounded-xl shadow-md feature-card">
+                    <img src="assets/blog-feature.png" alt="Dance blog" class="rounded-lg mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Dance Blog</h3>
+                    <p class="text-gray-600">Insights, tutorials, and industry news from professional dancers and choreographers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Our Dance Revolution</h2>
+                    <p class="mb-4">As a professional dancer for 8 years, I struggled with disconnected systems for class scheduling, performance archives, and student communication. Transitioning to tech through ALX's Software Engineering program has given me the opportunity to bridge this gap.</p>
+                    <p class="mb-6">This project combines my passion for dance and technology in creating a unified platform I wish existed during my performing years. While it's part of my ALX portfolio project, it's become much more than just a tool for easy accessibility.</p>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Development Team</h3>
+                        <div class="space-y-2">
+                            <p>Ronald Odongo</p>
+                            <div class="flex space-x-4">
+                                <a href="[YOUR_LINKEDIN]" class="text-purple-600 hover:underline transition-colors">LinkedIn</a>
+                                <a href="[YOUR_GITHUB]" class="text-purple-600 hover:underline transition-colors">GitHub</a>
+                                <a href="[YOUR_TWITTER]" class="text-purple-600 hover:underline transition-colors">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="[YOUR_GITHUB_REPO]" 
+                       class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-black transition-colors">
+                       View Source Code
+                    </a>
+                </div>
+                <div>
+                    <img src="assets/dancer.jpeg" alt="Development team" 
+                         class="rounded-lg shadow-lg w-full animate-fade">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">See How It Works</h2>
+            <div class="video-container bg-gray-100 rounded-xl overflow-hidden shadow-xl">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0" 
+                        title="DanceCompany Demo"
+                        allowfullscreen
+                        class="w-full h-full">
+                </iframe>
+            </div>
+            <div class="mt-6 grid md:grid-cols-3 gap-4 text-left max-w-4xl mx-auto">
+                <div class="p-4 border-l-4 border-purple-500">
+                    <p class="font-semibold">0:30</p>
+                    <p>Project Inspiration</p>
+                </div>
+                <div class="p-4 border-l-4 border-purple-500">
+                    <p class="font-semibold">1:15</p>
+                    <p>Feature Walkthrough</p>
+                </div>
+                <div class="p-4 border-l-4 border-purple-500">
+                    <p class="font-semibold">3:00</p>
+                    <p>Future Roadmap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>© 2025 DanceCompany. ALX Portfolio Project.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
