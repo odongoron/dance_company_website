@@ -1,5 +1,5 @@
 {
-  "name": "blingers_empire",
+  "name": "dance_company",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.10.1",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.0.1",
     "geist": "^1.3.0",
     "lucide-react": "^0.472.0",
