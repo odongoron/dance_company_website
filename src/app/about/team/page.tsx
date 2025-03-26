@@ -37,13 +37,13 @@ const TeamPage = () => {
   const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: "Misheal Victor Okumu",
+      name: "One Dancer",
       role: "Founder & Creative Director",
       category: "leader",
-      gridImage: "/team/team_id_1.jpg",
-      modalImage: "/team/team_id_1_full.jpg",
+      gridImage: "/team/profile.webp",
+      modalImage: "/team/profile.webp",
       achievements: ["15+ Years Experience", "International Performer", "Certified Trainer"],
-      bio: "Visionary leader who transformed a community initiative into a thriving arts empire. ",
+      bio: "One of the visionary leaders who transformed a community initiative into a thriving arts empire. ",
       specialties: ["Contemporary Dance", "Gymnastics","Choreography", "Youth Development"],
       socialMedia: {
         instagram: "#",
@@ -51,7 +51,7 @@ const TeamPage = () => {
         twitter: "#",
       },
     },
-    {
+    /*{
       id: 2,
       name: "Rachel Okumu",
       role: "Operatins & Finance Manager",
@@ -114,23 +114,23 @@ const TeamPage = () => {
         facebook: "#",
         twitter: "#",
       },
-    },
+    },*/
     {
       id: 6,
-      name: "Demot Ademba",
+      name: "John Doe",
       role: "Gymnastics/Ballet Instructor",
       category: "instructor",
-      gridImage: "/team/team_id_6.jpg",
-      modalImage: "/team/team_id_6_full.jpg",
-      achievements: [" ", " ", " "],
-      bio: "A versatile talent nurtured by Blingers Empire, Demot Ademba transitioned from martial arts to dance and gymnastics, blending discipline and physical control with creative expression. He continues to evolve as a performer, showcasing dedication and growth in both fields. ",
+      gridImage: "/team/profile2.jpeg",
+      modalImage: "/team/profile2.jpeg",
+      achievements: ["Professional Performer", "7+ Years Experience", "Award Winner"],
+      bio: "A versatile talent nurtured by Dance company, He transitioned from martial arts to dance and gymnastics, blending discipline and physical control with creative expression. He continues to evolve as a performer, showcasing dedication and growth in both fields. ",
       specialties: ["Contemporary Dance", "Gymnastics","Hip Hop", "Afro Urban & Ballroom"],
       socialMedia: {
         instagram: "#",
         facebook: "#",
         twitter: "#",
       },
-    },
+    },/*
     {
       id: 7,
       name: "Mercy Anne Kageshi",
@@ -178,13 +178,13 @@ const TeamPage = () => {
         facebook: "#",
         twitter: "#",
       },
-    },
+    },*/
   ];
 
   const stats = [
-    { icon: Users, value: "200+", label: "Students Trained" },
+    { icon: Users, value: "100+", label: "Students Trained" },
     { icon: Award, value: "15+", label: "Years Experience" },
-    { icon: Music, value: "50+", label: "Performances" },
+    { icon: Music, value: "20+", label: "Performances" },
     { icon: Star, value: "100%", label: "Parent Satisfaction" },
   ];
 
@@ -193,7 +193,7 @@ const TeamPage = () => {
       {/* Hero Section */}
       <div className="relative h-[500px] -mb-32">
         <Image
-          src="/covers/team/team_cover.jpg"
+          src="/covers/team.webp"
           alt="Team Hero Banner"
           className="object-cover"
           fill
@@ -205,7 +205,7 @@ const TeamPage = () => {
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl text-white font-bold mb-4">Meet Our Team</h1>
               <p className="text-xl text-[#c4a01c]">
-                The passionate individuals behind Blingers Empire
+                The passionate individuals behind Dance Company
               </p>
             </div>
           </div>
