@@ -21,11 +21,23 @@ const TestimonialsPage = () => {
       name: "Sarah Johnson",
       role: "Parent",
       category: "parents",
-      image: "/gallery/image20.jpg",
-      quote: "Blingers Empire has transformed my daughter's life. The confidence she has gained through dance is incredible.",
+      image: "/gallery/testimony.webp",
+      quote: "Dance Company has transformed my daughter's life. The confidence she has gained through dance is incredible.",
       rating: 5,
       relationship: "Parent of Emma, 12",
       impact: "Improved confidence and discipline",
+      featured: true
+    },
+    {
+      id: 2,
+      name: "Jane Doe",
+      role: "Dancer",
+      category: "students",
+      image: "/gallery/testimony2.jpeg",
+      quote: "I have made great improvement on my dance career and i would recommend Dance Company all the time.",
+      rating: 5,
+      relationship: "Student",
+      impact: "Improved professionalism",
       featured: true
     },
     // Add more testimonials...
@@ -46,7 +58,7 @@ const TestimonialsPage = () => {
       {/* Hero Section */}
       <div className="relative h-[400px]">
         <Image
-          src="/covers/testimonials.jpeg"
+          src="/covers/testimonials.jpg"
           alt="Dance Performance"
           className="object-cover"
           fill
@@ -183,7 +195,7 @@ const TestimonialsPage = () => {
             Join Our Growing Community
           </h2>
           <p className="text-[#c4a01c] mb-8 max-w-2xl mx-auto">
-            Start your journey with Blingers Empire and be part of our success stories.
+            Start your journey with us and be part of our success stories.
             Transform your passion for dance into excellence.
           </p>
           <button 
